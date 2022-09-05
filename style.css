@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.cointenr {
+    background: linear-gradient(135deg, rgb(31, 132, 255), rgb(233, 149, 244));
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.box {
+    width: 100%;
+    max-width: 700px;
+    background: white;
+    padding: 25px 30px;
+    border-radius: 9px;
+    overflow: hidden;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+}
+
+.logo::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background: linear-gradient(135deg, rgb(31, 132, 255), rgb(233, 149, 244));
+    bottom: 0;
+    left: 0;
+
+}
+
+.userdetails {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+.inbox {
+    width: calc(100% / 2 - 20px);
+    margin-bottom: 15px;
+}
+
+.inbox label {
+    font-weight: 500;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.inbox input {
+    width: 100%;
+    height: 45px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+
+}
+
+.inbox input:focus,
+.inbox input:valid {
+    border-color: rgb(233, 149, 244);
+}
+
+.gender {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    margin: 14px 0;
+
+}
+
+.label {
+    font-size: 20px;
+    font-weight: 500;
+
+}
+
+button {
+    width: 100%;
+    margin: 12px 0;
+    padding: 15px;
+    border-radius: 7px;
+    background: linear-gradient(-135deg, rgb(31, 132, 255), rgb(233, 149, 244));
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
+.gender label {
+    align-items: center;
+    display: flex;
+}
+
+.gender .dot input {
+    height: 18px;
+    width: 18px;
+
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+}
